@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><title>Dalgona Candy</title><style>body {
+        margin: 0;
+      }
+      canvas {
+        position: absolute;
+        cursor: none;
+      }
+      #inner, #area{
+        /* visibility: hidden; */
+        opacity: 0;
+      }
+      .choose_candy{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 200;
+      }
+      .choose_candy h1{
+        text-align: center;
+        font-size: 48px;
+        font-family: 'Arial';
+        margin-top: 100px;
+      }
+      .choose_candy .dalognas{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .candy {
+        width: 200px;
+        margin: 20px;
+      }
+      .winner{
+        display: none;
+        background-color: green;
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        padding: 20px;
+        font-size: 48px;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Arial';
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      .lose{
+        display: none;
+        background-color: rgb(197, 12, 12);
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        padding: 20px;
+        font-size: 32px;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Arial';
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      .author{
+        font-size: 8px;
+        text-align:center;
+      }</style></head><body><div class="container"><canvas id="area"></canvas><canvas id="outer"></canvas><canvas id="inner"></canvas><canvas id="needle"></canvas></div><div class="choose_candy" id="choose_candy"><h1>Choose your candy</h1><div class="dalognas"><img alt="circle" class="candy" id="circle"> <img alt="circle" class="candy" id="square"> <img alt="circle" class="candy" id="triangle"> <img alt="circle" class="candy" id="umbrella"></div></div><div class="winner">You win!<br><div class="author"><small>JustCarry: Good job!</small></div></div><div class="lose">You cracked it, you lose!</div><script src="index.js"></script></body></html>
